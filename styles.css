@@ -1,17 +1,22 @@
 * {
+    font-family: 'Source Sans Pro';
+    margin: 0;
+    padding: 0;
+}
+
+.page {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    margin: auto;
     align-items: center;
-    width: 900px;
+    max-width: 900px;
+    height: 100%;
 }
 
 .section-1 {
     display: flex;
     flex-direction: column;
     background-color: peachpuff;
-    padding-left: 100px;
-    padding-right: 100px;
     width: 100%;
 }
 
@@ -20,6 +25,15 @@
     justify-content: space-between;
     padding: 15px;
     gap: 30px;
+    align-items: center;
+    margin: 30px;
+}
+
+.menu > img {
+    flex: 1 1 200px;
+    max-width: 200px;
+    min-width: 100px;
+    height: auto;
 }
 
 .page-links {
@@ -39,11 +53,14 @@ a:hover {
 }
 
 .header {
-    padding-top: 55px;
+    padding-top: 30px;
     padding-bottom: 55px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 50px;
 }
 
 .left-header-bin {
@@ -59,23 +76,27 @@ h1 {
 
 p {
     color: lightgray;
+    max-width: 300px;
 }
 
 button {
+    box-shadow: none;
     background-color: lightcoral;
     color: white;
+    width: 150px;
+    height: 30px;
 }
 
 button:hover {
     background-color: coral;
 }
 
-.left-header-bin, .right-header-bin {
-    flex: 1 1 400px;
+.right-header-bin > img {
+    width: 300px;
+    height: auto;
 }
 
 .section-2 {
-    padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,6 +114,7 @@ h2 {
     justify-content: center;
     gap: 20px;
     padding-bottom: 50px;
+    flex-wrap: wrap;
 }
 
 .team-member {
@@ -100,7 +122,6 @@ h2 {
     flex-direction: column;
     gap: 5px;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .team-member > img {
@@ -119,7 +140,6 @@ h2 {
 
 .section-3 {
     display: flex;
-    padding: 80px;
     background-color: lightgray;
     width: 100%;
 }
@@ -129,6 +149,7 @@ h2 {
     flex-direction: column;
     gap: 5px;
     align-items: center;
+    padding: 30px;
 }
 
 h3 {
@@ -144,9 +165,9 @@ h4 {
 }
 
 .section-4 {
-    padding: 80px;
     display: flex;
     width: 100%;
+    justify-content: center;
 }
 
 .CTA-bin {
@@ -156,6 +177,7 @@ h4 {
     gap: 10px;
     justify-content: space-around;
     padding: 25px;
+    margin: 30px;
 }
 
 .left-CTA {
@@ -179,6 +201,7 @@ h5 {
     border-width: 5px;
     border-radius: 5px;
     border-color: white;
+    border-style: solid;
     color: white;
 }
 
@@ -191,7 +214,6 @@ h5 {
     background-color: darkgray;
     display: flex;
     justify-content: center;
-    padding: 30px;
     width: 100%;
 }
 
